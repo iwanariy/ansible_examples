@@ -12,3 +12,4 @@ static/upload/*
 *.sqlite3
 
 ### vagrant
+.vagrant

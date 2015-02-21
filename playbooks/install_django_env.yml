@@ -3,3 +3,6 @@
 
 - name: install gunicorn
   pip: name=gunicorn version=19.2.1
+
+- name: install debug-toolbar
+  pip: name=django-debug-toolbar

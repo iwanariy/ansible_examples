@@ -1,0 +1,6 @@
+- hosts: web
+  sudo: yes
+  gather_facts: no
+  tasks:
+  - include: install_pip.yml
+  - include: install_django_env.yml

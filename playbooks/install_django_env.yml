@@ -1,0 +1,5 @@
+- name: install django
+  pip: name=django version=1.7.1
+
+- name: install gunicorn
+  pip: name=gunicorn version=19.2.1

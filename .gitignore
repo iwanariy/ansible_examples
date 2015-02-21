@@ -10,3 +10,5 @@ static/upload/*
 
 ### DB
 *.sqlite3
+
+### vagrant

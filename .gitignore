@@ -1,0 +1,12 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+static/upload/*
+!.gitkeep
+*/migrations/*
+
+### DB
+*.sqlite3

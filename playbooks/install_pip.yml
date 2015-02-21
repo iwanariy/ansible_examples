@@ -1,0 +1,9 @@
+- hosts: web
+  sudo: yes
+  gather_facts: no
+  tasks:
+    - name: install curl
+      yum: name=curl state=latest
+
+    - name: install pip
+      shell: curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | sudo python

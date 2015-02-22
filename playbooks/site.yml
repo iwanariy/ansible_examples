@@ -4,3 +4,4 @@
   tasks:
   - include: install_pip.yml
   - include: install_django_env.yml
+  - include: install_nginx.yml

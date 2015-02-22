@@ -1,0 +1,14 @@
+- name: install the nginx from a remote repo
+  yum: name=http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm state=present
+
+- name: install nginx
+  yum: name=nginx state=latest
+
+- name: copy conf file
+  copy: src=conf/default.conf dest=/etc/nginx/conf.d
+
+- name: start nginx
+  service: name=nginx state=started
+
+- name: enabled nginx
+  service: name=nginx enabled=yes

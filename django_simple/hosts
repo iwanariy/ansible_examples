@@ -1,2 +1,5 @@
-[web]
+[app_server]
+default
+
+[proxy_server]
 default

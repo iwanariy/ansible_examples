@@ -5,7 +5,7 @@
   yum: name=nginx state=latest
 
 - name: copy conf file
-  copy: src=conf/default.conf dest=/etc/nginx/conf.d
+  copy: src=default.conf dest=/etc/nginx/conf.d
 
 - name: start nginx
   service: name=nginx state=started

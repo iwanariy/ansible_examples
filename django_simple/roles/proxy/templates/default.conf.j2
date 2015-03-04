@@ -11,6 +11,6 @@ server {
 
   location /static {
     autoindex on;
-    alias /var/www/simple_web_page/static;
+    alias {{ static_root }};
   }
 }

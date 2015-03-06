@@ -1,0 +1,2 @@
+- include: install_vim.yml
+- include: install_tree.yml

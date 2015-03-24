@@ -1,0 +1,2 @@
+- name: install tree
+  yum: name=tree state=latest

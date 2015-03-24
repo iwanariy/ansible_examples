@@ -1,0 +1,17 @@
+- name: install vim
+  yum: name=vim state=latest
+
+- name: install git
+  yum: name=git state=latest
+
+- name: git .vimrc from repository from {{ github_account }}
+  git: repo=https://github.com/{{ github_account }}/dotfiles.git dest=~/dotfiles
+
+- name: create symlink
+  file: src=~/dotfiles/.vimrc dest=~/.vimrc state=link
+
+- name: create dir for NeoBundle
+  file: path=~/.vim/bundle state=directory owner=root group=root mode=0755
+
+- name: install NeoBundle
+  git: repo=https://github.com/Shougo/neobundle.vim dest=~/.vim/bundle/neobundle.vim

@@ -4,7 +4,7 @@
 - name: install git
   yum: name=git state=latest
 
-- name: git .vimrc from repository from {{ github_account }}
+- name: git .vimrc from repository
   git: repo=https://github.com/{{ github_account }}/dotfiles.git dest=~/dotfiles
 
 - name: create symlink

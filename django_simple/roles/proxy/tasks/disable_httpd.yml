@@ -1,0 +1,5 @@
+- name: stop httpd
+  service: name=httpd state=stopped
+
+- name: disable httpd
+  service: name=httpd enabled=no

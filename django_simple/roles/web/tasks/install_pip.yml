@@ -2,4 +2,4 @@
   yum: name=curl state=latest
 
 - name: install pip
-  shell: curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | sudo python
+  shell: curl -kL https://bootstrap.pypa.io/get-pip.py | sudo python

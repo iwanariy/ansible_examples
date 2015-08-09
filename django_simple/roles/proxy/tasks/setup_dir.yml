@@ -1,2 +1,2 @@
-- name: create root dir
+- name: create /var/www/html
   file: path=/var/www/html/ state=directory owner=nginx group=nginx mode=0755

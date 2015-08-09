@@ -29,5 +29,5 @@ playbook: site.yml
     copy conf file  TAGS: []
     start nginx TAGS: []
     enabled nginx TAGS: []
-    create root dir TAGS: []
+    create /var/www/html  TAGS: []
 ```
